@@ -33,10 +33,43 @@
             \end{itemize}
     \end{itemize}
 }
+
+\section{Environment setup}
+\frame{\frametitle{Environment setup}
+    Here are the basic steps to running python. 
+    \vspace{\baselineskip}
+
+    On a Windows PC you will download the exe: https://www.python.org/downloads/. 
+    \vspace{\baselineskip}
+
+    On Linux use the appropriate package manager. The schools Linux lab uses X so you will use "sudo ....", however they should have python already installed.
+    \vspace{\baselineskip}
+
+    On Mac, idk. If you have a Mac and are having trouble running python let me know, I will be able to help you
+}
+
+\frame{\frametitle{IDE?}
+    Well this is the more... unique part? Essentially you can choose whatever editor you want. You don't even have to use an IDE, you can edit python in 
+    notepad++! Then, when you want to run the SCRIPT, simply run "python SCRIPT" in the terminal.
+
+    \begin{enumerate}
+        \item<1-> Python's own IDE, yeah probably don't use this one
+        \item<1-> VSCode, a very popular text editor in electron on the rise. Great for industry practice
+        \item<1-> Pycharm, I don't have much experience with pycharm but I've heard great things if you want to give it a shot
+        \item<1-> Neovim/Vim, I personally use vim/neovim because I hate myself
+    \end{enumerate}
+
+}
+
 \section{Variables}
 \frame{\frametitle{Variables} 
     Here we will go into some basic examples of variables in python.
     First variables should be lowercase
+    \vspace{\baselineskip}
+
+    Also, variables are not typed like in C or C++ since python is a dynamically typed language. Meaning the variables
+    are determined at runtime
+
     \begin{enumerate}
         \item<1-> x = 5
         \item<1-> y = 10
@@ -46,14 +79,22 @@
 }
 \subsection{Variables and Concatenation}
 \frame{\frametitle{Variables and Concatenation} 
-    "In formal language theory and computer programming, string concatenation is the operation of joining character strings end-to-end" - Wikipedia
+    "In formal language theory and computer programming, string concatenation is the operation of joining character strings end-to-end" - Wikipedia 
+    \vspace{\baselineskip}
+
     IE: print("Hello" + "World")
 }
 \subsection{Variables Exercise}
 \frame{\frametitle{Variables Exercise}
     Write a python program which prints a users mpg. You can take in input in python like the following:
-    miles_driven = input('Enter the number of gallons')
+    \vspace{\baselineskip}
+
+    miles\_driven = input("Enter the number of gallons")
+    \vspace{\baselineskip}
+
     Note: These exercises are purposly vague as are interview questions to get you to ask important questions
+    \vspace{\baselineskip}
+
     Note: Sometimes interviewers will give you hints if you are struggling but some interviewers will take taking a hint as a negative
 }
 
