@@ -1,4 +1,5 @@
 \documentclass{beamer}
+\usepackage{listings}
 \begin{document}
 \title{Python Chapter 1}
 \author{Ezequiel Torres}
@@ -112,7 +113,8 @@
 }
 
 \section{Operators and If Statements}
-\frame{\frametitle{If Statements and Operands}
+\subsection{Operators}
+\frame{\frametitle{Operands}
     Here we will get into the basic applications of operands in python.
 \begin{tabular}{|l||l||r|}
 \hline
@@ -132,8 +134,23 @@
 }
 
 \subsection{If statement}
-\frame{\frametitle{If Statements
-        test
+\begin{frame}[fragile]
+\frametitle{If Statement example}
+  \begin{lstlisting}
+       x = 5
+       y = 6
+
+       if x > y:
+        print("x is greater than y")
+       else:
+        print("y is greater than or equal to x")
+   \end{lstlisting}
+\end{frame}
+
+
+\subsection{Operators and If Statements Exercise}
+\frame{\frametitle{Operators and If Statements Exercise}
+    Fizz Buzz Simple: Take in an integer n, return Fizz if the number is even, and Buzz if the number is odd 
 }
 
 

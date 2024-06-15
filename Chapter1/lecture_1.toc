@@ -4,4 +4,7 @@
 \beamer@sectionintoc {4}{Variables}{14}{0}{4}
 \beamer@subsectionintoc {4}{1}{Variables and Concatenation}{15}{0}{4}
 \beamer@subsectionintoc {4}{2}{Variables Exercise}{16}{0}{4}
-\beamer@sectionintoc {5}{If Statements and Operators}{17}{0}{5}
+\beamer@sectionintoc {5}{Operators and If Statements}{17}{0}{5}
+\beamer@subsectionintoc {5}{1}{Operators}{17}{0}{5}
+\beamer@subsectionintoc {5}{2}{If statement}{18}{0}{5}
+\beamer@subsectionintoc {5}{3}{Operators and If Statements Exercise}{19}{0}{5}
