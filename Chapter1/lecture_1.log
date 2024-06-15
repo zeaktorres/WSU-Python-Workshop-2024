@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.13)  14 JUN 2024 01:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.13)  14 JUN 2024 18:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -864,7 +864,7 @@ ut line 23.
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-<CTCI.png, id=96, 98.59056pt x 133.76683pt>
+<CTCI.png, id=102, 98.59056pt x 133.76683pt>
 File: CTCI.png Graphic file (type png)
 <use CTCI.png>
 Package pdftex.def Info: CTCI.png  used on input line 23.
@@ -893,7 +893,7 @@ Package pdftex.def Info: CTCI.png  used on input line 23.
  [6
 
 ]
-<ga.png, id=200, 133.83333pt x 150.82434pt>
+<ga.png, id=206, 133.83333pt x 150.82434pt>
 File: ga.png Graphic file (type png)
 <use ga.png>
 Package pdftex.def Info: ga.png  used on input line 35.
@@ -932,6 +932,8 @@ Package pdftex.def Info: ga.png  used on input line 35.
 
 ] [15
 
+] [16
+
 ]
 \tf@nav=\write6
 \openout6 = `lecture_1.nav'.
@@ -947,24 +949,31 @@ Package pdftex.def Info: ga.png  used on input line 35.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-Package rerunfilecheck Info: File `lecture_1.out' has not changed.
-(rerunfilecheck)             Checksum: 9C85A5734CF12A99C87E9AE9033B69BA;728.
+
+
+Package rerunfilecheck Warning: File `lecture_1.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `lecture_1.out':
+(rerunfilecheck)             Before: 6827D283F9746A284D6BDE70EF56F5E3;859
+(rerunfilecheck)             After:  873CB7FC116148105E9589C0183EE355;864.
  ) 
 Here is how much of TeX's memory you used:
- 21435 strings out of 476076
- 408205 string characters out of 5793775
+ 21444 strings out of 476076
+ 408286 string characters out of 5793775
  1934187 words of memory out of 5000000
- 43071 multiletter control sequences out of 15000+600000
+ 43077 multiletter control sequences out of 15000+600000
  568613 words of font info for 74 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  128i,14n,123p,400b,563s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on lecture_1.pdf (15 pages, 280326 bytes).
+Output written on lecture_1.pdf (16 pages, 282517 bytes).
 PDF statistics:
- 449 PDF objects out of 1000 (max. 8388607)
- 413 compressed objects within 5 object streams
- 36 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 482 PDF objects out of 1000 (max. 8388607)
+ 445 compressed objects within 5 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
