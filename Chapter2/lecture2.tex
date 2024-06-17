@@ -1,0 +1,49 @@
+\documentclass{beamer}
+\usepackage{listings}
+\begin{document}
+\title{Python Chapter 2: Arrays and For Loops}
+\author{Ezequiel Torres}
+\date{\today}
+\frame{\titlepage}
+\frame{\frametitle{Table of contents}\tableofcontents}
+
+
+\section{Array}
+\frame{\frametitle{Basic Array}
+    Here we will discuss the most basic example of an array in python.
+    \vspace{\baselineskip}
+
+    x = [1,2]
+    \vspace{\baselineskip}
+
+    x[0] \# this will return 1
+    x[1] \# this will return 2
+}
+
+\section{Looping arrays}
+\frame{\frametitle{Basic iterating loop}
+    Now here is how we would iterate through each item in a loop
+
+    x = [1,2]
+    for number in x:
+        print(number)
+}
+
+\section{Looping with range}
+\frame{\frametitle{Basic iterating loop with range}
+    If we want to iterate over a range of numbers, we can utilize the range function. Which takes in a 
+    range(start, stop, step)
+    \vspace{\baselineskip}
+
+    for i in range(10):
+        print(i)
+}
+
+\section{Looping exercise}
+\frame{\frametitle{Looping exercise}
+    Print a countdown starting from 10, and once it hits zero, print blastoff. Also, try to have the program wait inbetween 
+    countdowns. Hint, look at the python sleep function in the python docs: \hyperref[Python Docs Time](https://docs.python.org/3/library/time.html) You will need 
+    a "import time" at the top of your python file
+}
+
+\end{document}

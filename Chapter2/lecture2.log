@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.13)  15 JUN 2024 15:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.13)  16 JUN 2024 23:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**lecture_1.tex
-(./lecture_1.tex
+**lecture2.tex
+(./lecture2.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
@@ -703,8 +703,8 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count345
 \l__pdf_internal_box=\box78
 )
-(./lecture_1.aux)
-\openout1 = `lecture_1.aux'.
+(./lecture2.aux)
+\openout1 = `lecture2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -782,10 +782,9 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring OFF on input line 3.
-
-(./lecture_1.out) (./lecture_1.out)
+ (./lecture2.out) (./lecture2.out)
 \@outlinefile=\write5
-\openout5 = `lecture_1.out'.
+\openout5 = `lecture2.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 3.
@@ -865,167 +864,65 @@ sh.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 \c@lstlisting=\count352
- (./lecture_1.nav)
+ (./lecture2.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
 (hyperref)                setting the option has no effect on input line 5.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./lecture_1.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./lecture2.toc)
 [2
 
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
+] [3
 
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
+] [4
 
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 24.
-
-(/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
-thkerncmss.
-)
-<CTCI.png, id=125, 98.59056pt x 133.76683pt>
-File: CTCI.png Graphic file (type png)
-<use CTCI.png>
-Package pdftex.def Info: CTCI.png  used on input line 24.
-(pdftex.def)             Requested size: 98.59032pt x 133.7665pt.
- [3
-
- <./CTCI.png (PNG copy)>]
-File: CTCI.png Graphic file (type png)
-<use CTCI.png>
-Package pdftex.def Info: CTCI.png  used on input line 24.
-(pdftex.def)             Requested size: 98.59032pt x 133.7665pt.
- [4
+] [5
 
 ]
-File: CTCI.png Graphic file (type png)
-<use CTCI.png>
-Package pdftex.def Info: CTCI.png  used on input line 24.
-(pdftex.def)             Requested size: 98.59032pt x 133.7665pt.
- [5
 
-]
-File: CTCI.png Graphic file (type png)
-<use CTCI.png>
-Package pdftex.def Info: CTCI.png  used on input line 24.
-(pdftex.def)             Requested size: 98.59032pt x 133.7665pt.
- [6
+LaTeX Warning: Hyper reference `Python Docs Time' on page 6 undefined on input 
+line 47.
 
-]
-<ga.png, id=229, 133.83333pt x 150.82434pt>
-File: ga.png Graphic file (type png)
-<use ga.png>
-Package pdftex.def Info: ga.png  used on input line 36.
-(pdftex.def)             Requested size: 133.83298pt x 150.82397pt.
- [7
-
- <./ga.png (PNG copy)>]
-File: ga.png Graphic file (type png)
-<use ga.png>
-Package pdftex.def Info: ga.png  used on input line 36.
-(pdftex.def)             Requested size: 133.83298pt x 150.82397pt.
- [8
-
-]
-File: ga.png Graphic file (type png)
-<use ga.png>
-Package pdftex.def Info: ga.png  used on input line 36.
-(pdftex.def)             Requested size: 133.83298pt x 150.82397pt.
- [9
-
-]
-File: ga.png Graphic file (type png)
-<use ga.png>
-Package pdftex.def Info: ga.png  used on input line 36.
-(pdftex.def)             Requested size: 133.83298pt x 150.82397pt.
- [10
-
-] [11
-
-]
-[12
-
-] [13
-
-] [14
-
-] [15
-
-] [16
-
-] [17
-
-]
-\openout4 = `lecture_1.vrb'.
-
- (./lecture_1.vrb
-LaTeX Font Info:    Trying to load font information for OML+cmss on input line 
-6.
-LaTeX Font Info:    No file OMLcmss.fd. on input line 6.
-
-
-LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
-(Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textgreater' on input line 6.
-
-
-Overfull \hbox (8.07341pt too wide) in paragraph at lines 9--10
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-) [18
-
-] [19
+[6
 
 ]
 \tf@nav=\write6
-\openout6 = `lecture_1.nav'.
+\openout6 = `lecture2.nav'.
 
 \tf@toc=\write7
-\openout7 = `lecture_1.toc'.
+\openout7 = `lecture2.toc'.
 
 \tf@snm=\write8
-\openout8 = `lecture_1.snm'.
+\openout8 = `lecture2.snm'.
 
- (./lecture_1.aux)
+ (./lecture2.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `lecture_1.out' has not changed.
-(rerunfilecheck)             Checksum: F9FBB8FD26E6415C70221BC3FA3CAF21;1526.
+Package rerunfilecheck Info: File `lecture2.out' has not changed.
+(rerunfilecheck)             Checksum: 52898CB7709932BC69E0EFF16B616690;449.
  ) 
 Here is how much of TeX's memory you used:
- 23121 strings out of 476076
- 430695 string characters out of 5793775
- 1941187 words of memory out of 5000000
- 44729 multiletter control sequences out of 15000+600000
- 568613 words of font info for 74 fonts, out of 8000000 for 9000
+ 22587 strings out of 476076
+ 423069 string characters out of 5793775
+ 1934187 words of memory out of 5000000
+ 44253 multiletter control sequences out of 15000+600000
+ 559881 words of font info for 42 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 128i,14n,123p,405b,1270s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/symbols/msam10.pfb>
-Output written on lecture_1.pdf (19 pages, 296432 bytes).
+ 128i,14n,123p,404b,561s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
+Output written on lecture2.pdf (6 pages, 36076 bytes).
 PDF statistics:
- 586 PDF objects out of 1000 (max. 8388607)
- 543 compressed objects within 6 object streams
- 49 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 203 PDF objects out of 1000 (max. 8388607)
+ 183 compressed objects within 2 object streams
+ 17 named destinations out of 1000 (max. 500000)
+ 75 words of extra memory for PDF output out of 10000 (max. 10000000)
 

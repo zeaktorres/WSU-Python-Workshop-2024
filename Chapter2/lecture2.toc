@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Array}{3}{0}{1}
+\beamer@sectionintoc {2}{Looping arrays}{4}{0}{2}
+\beamer@sectionintoc {3}{Looping with range}{5}{0}{3}
+\beamer@sectionintoc {4}{Looping exercise}{6}{0}{4}
