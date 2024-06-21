@@ -1,0 +1,108 @@
+\documentclass{beamer}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage{listings}
+\begin{document}
+\title{Python Chapter 4: Functions}
+\author{Ezequiel Torres}
+\date{\today}
+\frame{\titlepage}
+\frame{\frametitle{Table of contents}\tableofcontents}
+
+
+
+
+\section{Functions}
+\frame{\frametitle{Functions}
+    Here we will discuss the most basic example of a Function. Functions
+    are for when you want to repeat code.
+    \vspace{\baselineskip}
+
+    def myFunction():
+        \vspace{\baselineskip}
+
+        print("Hello from a function")
+        \vspace{\baselineskip}
+
+    myFunction() \# Prints "Hello from a function"
+}
+
+
+\subsection{Function Arguments}
+\begin{frame}[fragile]
+\frametitle{Function Arguments}
+\begin{lstlisting}
+     def hello(name):
+        print("hello " + name) 
+     
+     hello("Zeak") # Prints "hello zeak"
+  \end{lstlisting}
+\end{frame}
+
+\section{Recursion}
+\frame{\frametitle{Functions}
+    One cool thing you can do from a function is call itself, for recusion!
+    \vspace{\baselineskip}
+
+    def myFunction():
+        \vspace{\baselineskip}
+
+        print("I am a good programmer!")
+        \vspace{\baselineskip}
+        
+        myFunction()
+        \vspace{\baselineskip}
+
+    myFunction() \# Prints "I am a good programmer" endlessy!
+}
+
+\subsection{Recursion Base Case}
+\frame{\frametitle{Recursion Base Case}
+    What to do when you want to exit? Base case!
+    \vspace{\baselineskip}
+
+    def myFunction(count):
+        \vspace{\baselineskip}
+        
+        if count == 100:
+        \vspace{\baselineskip}
+
+            return
+        \vspace{\baselineskip}
+
+
+        print("I am a good programmer!")
+        \vspace{\baselineskip}
+        
+        myFunction()
+        \vspace{\baselineskip}
+
+    myFunction(0) \# Prints "I am a good programmer" 100 times
+}
+
+\subsection{Recursion Exercise}
+\frame{\frametitle{Recursion Exercise}
+    Generate the sum of the value of Pascal's Triangle at N. 
+}
+
+
+\subsection{Recursion Exercise Solution}
+\begin{frame}[fragile]
+\frametitle{Recursion Exercise Solution}
+\begin{lstlisting}
+    def triangle(n):
+    if n == 0:
+        return []
+    elif n == 1:
+        return [[1]]
+    else:
+        newRow = [1]
+        result = triangle(n-1)
+        lastRow = result[-1]
+        for i in range(len(last_row)-1):
+            new_row.append(last_row[i] + last_row[i+1])
+        newRow += [1]
+        result.append(new_row)
+    return result
+  \end{lstlisting}
+\end{frame}
+\end{document}
