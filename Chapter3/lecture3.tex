@@ -1,0 +1,79 @@
+\documentclass{beamer}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage{listings}
+\begin{document}
+\title{Python Chapter 2: Arrays and For Loops}
+\author{Ezequiel Torres}
+\date{\today}
+\frame{\titlepage}
+\frame{\frametitle{Table of contents}\tableofcontents}
+
+
+
+
+\section{Dictionary}
+\frame{\frametitle{Dictionary}
+    Here we will discuss the most basic example of a Dictionary. They are for
+    key value pairs. Now in python, dictionaries are ordered meaning you can iterate them easily
+    \vspace{\baselineskip}
+
+    x = {"Jim": 1, "Tom": 2} 
+    \vspace{\baselineskip}
+
+    x["Jim"] \# this will return a 1
+    \vspace{\baselineskip}
+
+    x["Tom"] \# this will return a 2
+}
+
+
+\subsection{Dictionary Removal}
+\begin{frame}[fragile]
+\frametitle{Dictionary Removal}
+  \begin{lstlisting}
+      x = {"Jim": 1, "Tom": 2}
+      x.remove("Jim")
+      if "Jim" not in x:
+        print("Jim has left")
+  \end{lstlisting}
+\end{frame}
+
+\subsection{Dictionary Addition}
+\begin{frame}[fragile]
+\frametitle{Dictionary Additon}
+  \begin{lstlisting}
+      x = {"Tom": 2}
+      x.add("Jim")
+      if "Jim" in x:
+        print("Jim is back")
+  \end{lstlisting}
+\end{frame}
+
+\subsection{Dictionary Looping}
+\begin{frame}[fragile]
+\frametitle{Dictionary Looping}
+  \begin{lstlisting}
+      x = {"Jim": 1, "Tom": 2, "Kerrie": 3}
+      for p in x:
+          print(p) \# prints all keys
+      for v in x:
+          print(v) \# prints all values
+  \end{lstlisting}
+\end{frame}
+
+\section{Sets}
+\frame{\frametitle{Sets}
+    Sets are a lot like dictionaries, but they contain only one key! Great for checking when you have
+    visited something.
+
+    mySet = {"apple", "banana", "cherry"}
+    \vspace{\baselineskip}
+    
+    if "apple" in myset:
+    \vspace{\baselineskip}
+        
+        print("There is an apple in myset")
+        \vspace{\baselineskip}
+}
+
+\end{document}

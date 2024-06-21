@@ -1,0 +1,8 @@
+\frametitle{Dictionary Looping}
+  \begin{lstlisting}
+      x = {"Jim": 1, "Tom": 2, "Kerrie": 3}
+      for p in x:
+          print(p) \# prints all keys
+      for v in x:
+          print(v) \# prints all values
+  \end{lstlisting}
