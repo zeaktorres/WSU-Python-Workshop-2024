@@ -1,8 +1,7 @@
-\frametitle{Dictionary Looping}
+\frametitle{Sets Addition}
   \begin{lstlisting}
-      x = {"Jim": 1, "Tom": 2, "Kerrie": 3}
-      for p in x:
-          print(p) \# prints all keys
-      for v in x:
-          print(v) \# prints all values
+     mySet = {"banana", "cherry"}
+     mySet.add("apple")
+     if "apple" in mySet:
+        print("Apple is back!")
   \end{lstlisting}

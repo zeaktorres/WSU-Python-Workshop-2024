@@ -1,6 +1,0 @@
-\beamer@sectionintoc {1}{Functions}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Function Arguments}{4}{0}{1}
-\beamer@sectionintoc {2}{Recursion}{5}{0}{2}
-\beamer@subsectionintoc {2}{1}{Recursion Base Case}{6}{0}{2}
-\beamer@subsectionintoc {2}{2}{Recursion Exercise}{7}{0}{2}
-\beamer@subsectionintoc {2}{3}{Recursion Exercise Solution}{8}{0}{2}

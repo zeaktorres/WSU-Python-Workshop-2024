@@ -2,7 +2,7 @@
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 \usepackage{listings}
 \begin{document}
-\title{Python Chapter 2: Arrays and For Loops}
+\title{Python Chapter 3: Dictionaries and Sets}
 \author{Ezequiel Torres}
 \date{\today}
 \frame{\titlepage}
@@ -18,10 +18,8 @@
     \vspace{\baselineskip}
 
     x = {"Jim": 1, "Tom": 2} 
-    \vspace{\baselineskip}
 
     x["Jim"] \# this will return a 1
-    \vspace{\baselineskip}
 
     x["Tom"] \# this will return a 2
 }
@@ -32,7 +30,7 @@
 \frametitle{Dictionary Removal}
   \begin{lstlisting}
       x = {"Jim": 1, "Tom": 2}
-      x.remove("Jim")
+      x.pop("Jim")
       if "Jim" not in x:
         print("Jim has left")
   \end{lstlisting}
@@ -43,7 +41,7 @@
 \frametitle{Dictionary Additon}
   \begin{lstlisting}
       x = {"Tom": 2}
-      x.add("Jim")
+      x["Jim"] = 1
       if "Jim" in x:
         print("Jim is back")
   \end{lstlisting}
@@ -55,9 +53,9 @@
   \begin{lstlisting}
       x = {"Jim": 1, "Tom": 2, "Kerrie": 3}
       for p in x:
-          print(p) \# prints all keys
+          print(p) # prints all keys
       for v in x:
-          print(v) \# prints all values
+          print(v) # prints all values
   \end{lstlisting}
 \end{frame}
 
@@ -65,16 +63,37 @@
 \frame{\frametitle{Sets}
     Sets are a lot like dictionaries, but they contain only one key! Great for checking when you have
     visited something.
+    \vspace{\baselineskip}
 
     mySet = {"apple", "banana", "cherry"}
-    \vspace{\baselineskip}
-    
+
     if "apple" in myset:
-    \vspace{\baselineskip}
-        
-        print("There is an apple in myset")
-        \vspace{\baselineskip}
+
+        \tab print("There is an apple in myset")
 }
+
+\subsection{Sets Deletion}
+\begin{frame}[fragile]
+\frametitle{Sets Deletion}
+  \begin{lstlisting}
+     mySet = {"apple", "banana", "cherry"}
+     mySet.remove("apple")
+     if "apple" not in mySet:
+        print("There are no apples in the set")
+  \end{lstlisting}
+\end{frame}
+
+
+\subsection{Sets Addition}
+\begin{frame}[fragile]
+\frametitle{Sets Addition}
+  \begin{lstlisting}
+     mySet = {"banana", "cherry"}
+     mySet.add("apple")
+     if "apple" in mySet:
+        print("Apple is back!")
+  \end{lstlisting}
+\end{frame}
 
 \section{Exercise Two Sum}
 \frame{\frametitle{Exercise Two Sum}

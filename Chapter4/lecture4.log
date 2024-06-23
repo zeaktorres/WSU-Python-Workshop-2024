@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.13)  20 JUN 2024 21:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.13)  23 JUN 2024 12:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**lecture3.tex
-(./lecture3.tex
+**lecture4.tex
+(./lecture4.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
@@ -703,8 +703,8 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count345
 \l__pdf_internal_box=\box78
 )
-(./lecture3.aux)
-\openout1 = `lecture3.aux'.
+(./lecture4.aux)
+\openout1 = `lecture4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
@@ -782,9 +782,9 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring OFF on input line 4.
- (./lecture3.out) (./lecture3.out)
+ (./lecture4.out) (./lecture4.out)
 \@outlinefile=\write5
-\openout5 = `lecture3.out'.
+\openout5 = `lecture4.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 4.
@@ -864,22 +864,22 @@ sh.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 \c@lstlisting=\count352
- (./lecture3.nav)
+ (./lecture4.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
 (hyperref)                setting the option has no effect on input line 6.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./lecture3.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./lecture4.toc)
 [2
 
 ] [3
 
 ]
-\openout4 = `lecture3.vrb'.
+\openout4 = `lecture4.vrb'.
 
- (./lecture3.vrb) [4
+ (./lecture4.vrb) [4
 
 ] [5
 
@@ -888,9 +888,9 @@ Package hyperref Warning: Option `pdfauthor' has already been used,
 ] [7
 
 ]
-\openout4 = `lecture3.vrb'.
+\openout4 = `lecture4.vrb'.
 
- (./lecture3.vrb
+ (./lecture4.vrb
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
 10.
 
@@ -905,45 +905,38 @@ Overfull \hbox (54.06389pt too wide) in paragraph at lines 13--14
 
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 \tf@nav=\write6
-\openout6 = `lecture3.nav'.
+\openout6 = `lecture4.nav'.
 
 \tf@toc=\write7
-\openout7 = `lecture3.toc'.
+\openout7 = `lecture4.toc'.
 
 \tf@snm=\write8
-\openout8 = `lecture3.snm'.
+\openout8 = `lecture4.snm'.
 
 
-(./lecture3.aux)
+(./lecture4.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-Package rerunfilecheck Warning: File `lecture3.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `lecture3.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  5FE4F3C90B168043C2E7DAD607BF1431;832.
+Package rerunfilecheck Info: File `lecture4.out' has not changed.
+(rerunfilecheck)             Checksum: 43F1F330EF9F94C5016A053A9FF35494;1117.
  ) 
 Here is how much of TeX's memory you used:
- 22852 strings out of 476076
- 425589 string characters out of 5793775
+ 22913 strings out of 476076
+ 426589 string characters out of 5793775
  1950187 words of memory out of 5000000
- 44502 multiletter control sequences out of 15000+600000
+ 44561 multiletter control sequences out of 15000+600000
  560226 words of font info for 43 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  128i,14n,123p,420b,1300s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/cm-super/sfss1095.pfb>
-Output written on lecture3.pdf (8 pages, 45448 bytes).
+Output written on lecture4.pdf (8 pages, 47651 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
- 223 compressed objects within 3 object streams
- 23 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 284 PDF objects out of 1000 (max. 8388607)
+ 259 compressed objects within 3 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
