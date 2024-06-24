@@ -1,0 +1,144 @@
+\documentclass{beamer}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage{listings}
+\begin{document}
+\title{Python Chapter 5: Classes}
+\author{Ezequiel Torres}
+\date{\today}
+\frame{\titlepage}
+\frame{\frametitle{Table of contents}\tableofcontents}
+
+\section{Classes}
+\subsection{Class Example}
+\frame{\frametitle{Class Example}
+    Here is the basics of a class. Classes you can think of like a blueprint for programming. 
+    It can store it's own functions and variables as an object.
+    \vspace{\baselineskip}
+
+    class Dog:
+
+        \tab name = "Lucky"
+
+    myDog = Dog()
+
+    print(myDog.name)
+}
+
+\subsection{Class Initalize}
+\frame{\frametitle{Class Initalize}
+    When wanting to create a class with an initalized variables, you can use the init function.
+    \vspace{\baselineskip}
+
+    class Dog:
+
+        \tab def \_\_init\_\_(self, name):
+
+        \tab \tab self.name = name
+
+    myDog = Dog("Lucky")
+
+    print(myDog.name)
+}
+
+\subsection{Class Functions}
+\frame{\frametitle{Class Functions}
+    When wanting to create a class with initalized variables, you can use the init function.
+    \vspace{\baselineskip}
+
+    class Dog:
+
+        \tab def \_\_init\_\_(self, name, age):
+
+        \tab \tab self.name = name
+
+        \tab \tab self.age = age
+
+        \tab def increaseAge(self):
+
+        \tab \tab self.age += 1 
+
+    myDog = Dog("Lucky", 2)
+
+    myDog.increaseAge()
+
+    print(myDog.age)
+}
+
+\section{Inheritance}
+\subsection{Inheritance}
+\frame{\frametitle{Class Functions}
+    When we think of classes as blueprints, we can begin to think of inheritance as well. We call inheritance a "is-a" relationship. So, we can create a second class stating a golden retriever is a dog.
+    \vspace{\baselineskip}
+
+    class Dog:
+
+        \tab def \_\_init\_\_(self, name, age):
+
+        \tab \tab self.name = name
+
+        \tab \tab self.age = age
+
+        \tab def increaseAge(self):
+
+        \tab \tab self.age += 1 
+
+    class GoldenRetriever(Dog):
+        \tab def \_\_init\_\_(self, name, age, furColor):
+
+        \tab \tab super().\_\_init\_\_(name, age)
+
+        \tab \tab self.furColor = furColor
+
+    myDog = GoldenRetriever("Lucky", 2, "Gold")
+
+    myDog.increaseAge()
+
+    print(myDog.age)
+
+    print(myDog.furColor)
+}
+
+\subsection{Polymorphism}
+\frame{\frametitle{Polymorphism}
+    Polymorphism is where a function (or operators) can be executed from the same base class with different
+    outputs 
+    \vspace{\baselineskip}
+
+    class Dog:
+
+        \tab def \_\_init\_\_(self, name, age, furColor = None):
+
+        \tab \tab self.name = name
+
+        \tab \tab self.age = age
+        
+        \tab \tab self.furColor = furColor
+
+        \tab def increaseAge(self):
+
+        \tab \tab self.age += 1 
+        
+        \tab def jump(self):
+        
+        \tab \tab print("Dog jump!")
+}
+
+\begin{frame}[fragile]
+\frametitle{Polymorphism Continued}
+\begin{lstlisting}
+    class GoldenRetriever(Dog):
+        def __init__(self, name, age, furColor):
+        super().__init__(name, age, furColor)
+    def jump():
+        print("Golden Retriever jump!")
+    class Husky(Dog):
+        def __init__(self, name, age, furColor):
+        super().__init__(name, age, furColor)
+    def jump():
+        print("Husky jump!")
+    myDog = GoldenRetriever("Lucky", 2, "Gold")
+    theirDog = Husky("Snowy, 3, "White")  
+    thierDog.jump()
+\end{lstlisting}
+\end{frame}
+\end{document}

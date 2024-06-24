@@ -1,0 +1,16 @@
+\frametitle{Polymorphism Continued}
+\begin{lstlisting}
+    class GoldenRetriever(Dog):
+        def __init__(self, name, age, furColor):
+        super().__init__(name, age, furColor)
+    def jump():
+        print("Golden Retriever jump!")
+    class Husky(Dog):
+        def __init__(self, name, age, furColor):
+        super().__init__(name, age, furColor)
+    def jump():
+        print("Husky jump!")
+    myDog = GoldenRetriever("Lucky", 2, "Gold")
+    theirDog = Husky("Snowy, 3, "White")
+    thierDog.jump()
+\end{lstlisting}
