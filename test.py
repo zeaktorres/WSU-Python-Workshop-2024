@@ -1,5 +1,9 @@
-import heapq
-h = []
-for value in [3,6,2,9]:
-    heapq.heappush(h, value)
-print([heapq.heappop(h) for i in range(len(h))])
+class Node:
+    def __init__(self, v = None):
+        self.left: Node | None = None 
+        self.right: Node | None = None 
+        self.data = v
+
+root = Node(5)
+root.left = Node(4)
+root.right = Node(9)
