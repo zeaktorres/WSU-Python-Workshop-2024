@@ -1,0 +1,13 @@
+\section{Dequeue Methods}
+\frametitle{Dequeue Methods}
+\begin{lstlisting}
+# Python code to demonstrate Implementing
+# Stack using deque
+from collections import deque
+queue = deque(["Ram", "Tarun", "Asif", "John"])
+queue.append("Akbar")
+queue.append("Birbal")
+queue[-1] # Returns the first last element in O(1)
+queue[0]  # Returns the last element
+queue     # Returns True if the list has elements
+\end{lstlisting}

@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Heap}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Basics of Heaps}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Heap Example}{4}{0}{1}
+\beamer@subsectionintoc {1}{3}{Heap Pop Example}{5}{0}{1}
+\beamer@subsectionintoc {1}{4}{Heapify Example}{6}{0}{1}
+\beamer@subsectionintoc {1}{5}{Heap Sort}{7}{0}{1}

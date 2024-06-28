@@ -1,0 +1,7 @@
+\beamer@sectionintoc {1}{Stacks}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Basic Stack}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Stack Example}{4}{0}{1}
+\beamer@sectionintoc {2}{Queues}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Basics of Queues}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Queue Example}{6}{0}{2}
+\beamer@sectionintoc {3}{Dequeue Methods}{7}{0}{3}

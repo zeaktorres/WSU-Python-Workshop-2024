@@ -1,0 +1,94 @@
+\documentclass{beamer}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage{listings}
+\begin{document}
+\title{Python Chapter 7: Stacks and Queues using Dequeue}
+\author{Ezequiel Torres}
+\date{\today}
+\frame{\titlepage}
+\frame{\frametitle{Table of contents}\tableofcontents}
+
+\section{Stacks}
+\subsection{Basic Stack}
+\frame{\frametitle{Basics of Stacks}
+    When we want to utilize the full capabilities of a linked list
+    we can use a Stack. Stacks are LIFO, Last in First out, meaning
+    whoever joins the stack last is out first.
+    \vspace{\baselineskip}
+
+    When we want to grab the element from the top of the stack, we use
+    .pop() and it returns the last element.
+    \vspace{\baselineskip}
+
+    For our implementation of a stack we will use the deque library from collections
+}
+
+
+\begin{frame}[fragile]
+\subsection{Stack Example}
+\frametitle{Stack Example}
+\begin{lstlisting}
+# Python code to demonstrate Implementing  
+# Stack using deque 
+from collections import deque 
+queue = deque(["Ram", "Tarun", "Asif", "John"]) 
+print(queue) 
+queue.append("Akbar") 
+print(queue) 
+queue.append("Birbal") 
+print(queue) 
+print(queue.pop()) # Returns Birbal
+print(queue.pop()) # Returns Akbar   
+print(queue) 
+\end{lstlisting}
+\end{frame}
+
+\section{Queues}
+\subsection{Basics of Queues}
+\frame{\frametitle{Basics of Queues}
+    Queues are FIFO, First in First out, meaning
+    whoever joins the queue first is out first. A
+    great a analogy is thinking of a line to a movie, 
+    whoever is in front of the line is helped first.
+    \vspace{\baselineskip}
+
+    For our implementation of a queue we will use the deque library from collections; however,
+    we will use popLeft() to grab the first element
+}
+
+\begin{frame}[fragile]
+\subsection{Queue Example}
+\frametitle{Queue Example}
+\begin{lstlisting}
+# Python code to demonstrate Implementing  
+# Stack using deque 
+from collections import deque 
+queue = deque(["Ram", "Tarun", "Asif", "John"]) 
+print(queue) 
+queue.append("Akbar") 
+print(queue) 
+queue.append("Birbal") 
+print(queue) 
+print(queue.popleft()) # Returns Ram
+print(queue.popleft()) # Returns Tarun   
+print(queue) 
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\section{Dequeue Methods}
+\frametitle{Dequeue Methods}
+\begin{lstlisting}
+# Python code to demonstrate Implementing  
+# Stack using deque 
+from collections import deque 
+queue = deque(["Ram", "Tarun", "Asif", "John"]) 
+queue.append("Akbar") 
+queue.append("Birbal") 
+queue[-1] # Returns the first last element in O(1)
+queue[0]  # Returns the last element
+queue     # Returns True if the list has elements
+\end{lstlisting}
+\end{frame}
+\end{document}

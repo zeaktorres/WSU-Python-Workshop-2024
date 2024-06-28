@@ -1,0 +1,78 @@
+\documentclass{beamer}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage{listings}
+\begin{document}
+\title{Python Chapter 8: Heap Queues}
+\author{Ezequiel Torres}
+\date{\today}
+\frame{\titlepage}
+\frame{\frametitle{Table of contents}\tableofcontents}
+
+\section{Heap}
+\subsection{Basics of Heaps}
+\frame{\frametitle{Basics of Heaps}
+    Heaps are a binary tree where the root is always less than the
+    children
+    \vspace{\baselineskip}
+
+    We can use this to sort a list, or to have a list where we know the top element is 
+    always the smallest
+}
+
+
+\begin{frame}[fragile]
+\subsection{Heap Example}
+\frametitle{Heap Example}
+\begin{lstlisting}
+import heapq
+h = []
+heapq.heappush(h, 3)
+heapq.heappush(h, 6)
+heapq.heappush(h, 2)
+heapq.heappush(h, 9)
+print(h[0]) # Prints 2
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\subsection{Heap Pop Example}
+\frametitle{Heap Pop Example}
+\begin{lstlisting}
+import heapq
+h = []
+heapq.heappush(h, 3)
+heapq.heappush(h, 6)
+heapq.heappush(h, 2)
+heapq.heappush(h, 9)
+heapq.heappop(h)
+
+print(h[0]) # Prints 3
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\subsection{Heapify Example}
+\frametitle{Heapify Example}
+\begin{lstlisting}
+import heapq
+h = [3,6,2,9]
+heapq.heapify(h)
+
+print(h[0])
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\subsection{Heap Sort}
+\frametitle{Heap Sort}
+\begin{lstlisting}
+import heapq
+h = []
+for value in [3,6,2,9]:
+    heapq.heappush(h, value)
+
+# Prints 2,3,6,9
+print([heapq.heappop(h) for i in range(len(h))]) 
+\end{lstlisting}
+\end{frame}
+\end{document}

@@ -1,5 +1,11 @@
+\subsection{Heap Sort}
+\frametitle{Heap Sort}
+\begin{lstlisting}
 import heapq
 h = []
 for value in [3,6,2,9]:
     heapq.heappush(h, value)
+
+# Prints 2,3,6,9
 print([heapq.heappop(h) for i in range(len(h))])
+\end{lstlisting}
