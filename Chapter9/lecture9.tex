@@ -1,0 +1,224 @@
+\documentclass{beamer}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage{listings}
+\begin{document}
+\title{Python Chapter 9: Trees and Graphs}
+\author{Ezequiel Torres}
+\date{\today}
+\frame{\titlepage}
+\frame{\frametitle{Table of contents}\tableofcontents}
+
+\section{Node}
+\subsection{Node in Python}
+\frame{\frametitle{Basics of Heaps}
+    Nodes in python are very simple. We simply use the node class and reference the node class
+    in itself
+}
+
+
+\begin{frame}[fragile]
+\subsection{Binary Tree Example}
+\frametitle{Binary Tree Example}
+\begin{lstlisting}
+class Treenode:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+ 
+class Tree:
+    def __init__(self):
+        self.root = None\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\subsection{Print Binary Tree}
+\frametitle{Print Binary Tree}
+\begin{lstlisting}
+def height(root):
+    if root is None:
+        return 0
+    return max(height(root.left), \
+    height(root.right))+1
+ 
+ 
+def getcol(h):
+    if h == 1:
+        return 1
+    return getcol(h-1) + getcol(h-1) + 1
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\subsection{Print Binary Tree Cont.}
+\frametitle{Print Binary Tree Cont.}
+\begin{lstlisting}
+def printTree(M, root, col, row, height):
+    if root is None:
+        return
+    M[row][col] = root.data
+    printTree(M, root.left, col-pow(2, height-2), \ 
+    row+1, height-1)
+    printTree(M, root.right, col+pow(2, height-2),\ 
+    row+1, height-1)
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\subsection{Print Binary Tree Cont.}
+\frametitle{Print Binary Tree Cont.}
+\begin{lstlisting}
+def TreePrinter():
+    h = height(myTree.root)
+    col = getcol(h)
+    M = [[0 for _ in range(col)] \
+    for __ in range(h)]
+    printTree(M, myTree.root, col//2, 0, h)
+    for i in M:
+        for j in i:
+            if j == 0:
+                print(" ", end=" ")
+            else:
+                print(j, end=" ")
+        print("")
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\subsection{Print Binary Tree Cont.}
+\frametitle{Print Binary Tree Cont.}
+\begin{lstlisting}
+myTree = Tree()
+myTree.root = Treenode(1)
+myTree.root.left = Treenode(2)
+myTree.root.right = Treenode(3)
+myTree.root.left.left = Treenode(4)
+myTree.root.left.right = Treenode(5)
+myTree.root.right.left = Treenode(6)
+myTree.root.right.right = Treenode(7)
+TreePrinter()
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\section{Traversal}
+\subsection{Preorder}
+\frametitle{Preorder}
+\begin{lstlisting}
+class Node:
+    def __init__(self, v):
+        self.data = v
+        self.left = None
+        self.right = None
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\subsection{Preorder Cont.}
+\frametitle{Preorder Cont.}
+\begin{lstlisting}
+def printPreorder(node):
+    if node is None:
+        return
+
+    # Deal with the node
+    print(node.data, end=' ')
+
+    # Recur on left subtree
+    printPreorder(node.left)
+
+    # Recur on right subtree
+    printPreorder(node.right)\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\subsection{Preorder Cont.}
+\frametitle{Preorder Cont.}
+\begin{lstlisting}
+root = Node(1)
+root.left = Node(2)
+root.right = Node(3)
+root.left.left = Node(4)
+root.left.right = Node(5)
+root.right.right = Node(6)
+
+# Function call
+print("Preorder traversal of binary tree is:")
+printPreorder(root)
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\subsection{Inorder}
+\frametitle{Inorder}
+\begin{lstlisting}
+# Function to print inorder traversal
+def printInorder(node):
+    if node is None:
+        return
+ 
+    # First recur on left subtree
+    printInorder(node.left)
+ 
+    # Now deal with the node
+    print(node.data, end=' ')
+ 
+    # Then recur on right subtree
+    printInorder(node.right)
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\subsection{Inorder Cont.}
+\frametitle{Inorder Cont.}
+\begin{lstlisting}
+root = Node(1)
+root.left = Node(2)
+root.right = Node(3)
+root.left.left = Node(4)
+root.left.right = Node(5)
+root.right.right = Node(6)
+
+# Function call
+print("Inorder traversal of binary tree is:")
+printInorder(root)
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\subsection{PostOrder}
+\frametitle{PostOrder}
+\begin{lstlisting}
+def printPostorder(node):
+    if node == None:
+        return
+ 
+    # First recur on left subtree
+    printPostorder(node.left)
+ 
+    # Then recur on right subtree
+    printPostorder(node.right)
+ 
+    # Now deal with the node
+    print(node.data, end=' ')\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\subsection{PostOrder Cont.}
+\frametitle{PostOrder Cont.}
+\begin{lstlisting}
+root = Node(1)
+root.left = Node(2)
+root.right = Node(3)
+root.left.left = Node(4)
+root.left.right = Node(5)
+root.right.right = Node(6)
+
+# Function call
+print("Postorder traversal of binary tree is:")
+printPostorder(root)
+\end{lstlisting}
+\end{frame}
+\end{document}
